@@ -25,7 +25,7 @@ SECRET_KEY = '-eusb@q(n84*4xrnhfv2d(x&wv=&e=6xvw8)e_9+4a(a%yd5he'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', 'https://pure-cove-58933.herokuapp.com/']
 
 
 # Application definition
