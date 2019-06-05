@@ -1,0 +1,1 @@
+web: gunicorn py_postgressql.wsgi --log-file -
