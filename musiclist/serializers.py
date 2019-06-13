@@ -5,14 +5,14 @@ from .models import Album, Track
 class TrackSerializerModel(serializers.ModelSerializer):
     class Meta:
         model = Track
-        fields = ('order', 'title', 'duration')
+        fields = ('id', 'order', 'title', 'duration')
 
 class AlbumSerializer(serializers.ModelSerializer):
     tracks = TrackSerializerModel(many=True, read_only=True)
 
     class Meta:
         model = Album
-        fields = ('album_name', 'artist', 'tracks')
+        fields = ('id', 'album_name', 'artist', 'tracks')
 
 
 
