@@ -5,7 +5,6 @@ from django.db import models
 class Album(models.Model):
     album_name = models.CharField(max_length=100)
     artist = models.CharField(max_length=100)
-    image = models.CharField(max_length=100)
 
 class Track(models.Model):
     album = models.ForeignKey(Album, related_name='tracks', on_delete=models.CASCADE)
